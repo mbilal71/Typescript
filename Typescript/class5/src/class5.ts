@@ -168,26 +168,26 @@ QTR:1 Week 5 assignment.
 
  //-Q1: Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
 
- let day1 = 8
+ let day1 = 6
  if (day1 >=1 && day1 <=7){
  switch (day1) {
     case 1 :
-        console.log(`Monday`)
+        console.log(`The Day is Monday`)
         break
     case 2 :
-        console.log(`Tuesday`)
+        console.log(`The Day is Tuesday`)
         break
     case 3 :
-        console.log(`Wednesday`)
+        console.log(`The Day is Wednesday`)
         break
     case 4 :
-        console.log(`Thursday`)
+        console.log(`The Day is Thursday`)
         break
     case 5 :
-        console.log(`Friday`)
+        console.log(`The Day is Friday`)
         break
     case 6 : 
-        console.log(`Weekend`)  
+        console.log(`The Day is Weekend`)  
         break
 default :
         console.log(`Its Sunday`)                   
@@ -378,4 +378,3 @@ default : {
     console.log(`Please check! : 1 or more numbers could'nt be same!!`)
 }
 }
-

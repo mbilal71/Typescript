@@ -148,26 +148,26 @@ QTR:1 Week 5 assignment.
  - Take 5 different numbers and check which on is greatest and then check which one is smallest use separate conditionals  for both scenarios.
  */
 //-Q1: Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
-let day1 = 8;
+let day1 = 6;
 if (day1 >= 1 && day1 <= 7) {
     switch (day1) {
         case 1:
-            console.log(`Monday`);
+            console.log(`The Day is Monday`);
             break;
         case 2:
-            console.log(`Tuesday`);
+            console.log(`The Day is Tuesday`);
             break;
         case 3:
-            console.log(`Wednesday`);
+            console.log(`The Day is Wednesday`);
             break;
         case 4:
-            console.log(`Thursday`);
+            console.log(`The Day is Thursday`);
             break;
         case 5:
-            console.log(`Friday`);
+            console.log(`The Day is Friday`);
             break;
         case 6:
-            console.log(`Weekend`);
+            console.log(`The Day is Weekend`);
             break;
         default:
             console.log(`Its Sunday`);
@@ -176,7 +176,7 @@ if (day1 >= 1 && day1 <= 7) {
 else {
     console.log(`Invalid Day! : Please input from 1 to 7`);
 }
-// Try making ATM Machine matches pin and account number it it matches then user can withdraw amount. And if he or she hasn't sufficient balance show them a message .Show message for wrong account number and wrong pin separately. 
+//-Q2: Try making ATM Machine matches pin and account number it matches then user can withdraw amount. And if he or she hasn't sufficient balance show them a message .Show message for wrong account number and wrong pin separately. 
 let accountNum = 123456;
 let pin = 8264;
 let totalCash = 50000;
@@ -198,11 +198,10 @@ if (accountNum === 123456) {
 else {
     console.log(`Invalid Account`);
 }
-//- Write a ts program that prints message like "Good Morning" etc depending on time use hours only for now. Do it with both if else if and switch statement.
-//In IF ELSE Statement
+//-Q3: Write a ts program that prints message like "Good Morning" etc depending on time use hours only for now. Do it with both if else if and switch statement.
 let hour = 5;
+//Using IF-ELSE-IF
 if (hour >= 0 && hour <= 23)
-    // Using IF-ELSE statement
     if (hour >= 5 && hour < 12) {
         console.log(`Good Morning`);
     }
@@ -237,7 +236,7 @@ if (hour >= 0 && hour <= 23)
 else {
     console.log(`Invalid HRS! : Input HRS from 0 to 23`);
 }
-//- Write a program that prints the name of study for a person for instance   middle , matric etc from playgroup to PhD on basis of class number. Do it with both if else if and switch statement .
+//-Q4: Write a program that prints the name of study for a person for instance   middle , matric etc from playgroup to PhD on basis of class number. Do it with both if else if and switch statement .
 let class1 = 5;
 let primery = class1 >= 1 && class1 <= 5;
 let middle = class1 >= 5 && class1 <= 8;
@@ -273,7 +272,7 @@ if (class1 >= 1 && class1 <= 20) {
 else {
     console.log(`Invalid class! : Enter from 1 to 20 `);
 }
-// - Write a TS program that check ms wheather if the number is positive, zero or negative.
+//-Q5: Write a TS program that check ms wheather if the number is positive, zero or negative.
 let num9 = -1;
 let positive = num9 > 0;
 let negative = num9 < 0;
@@ -290,7 +289,7 @@ if (num9) {
 else {
     console.log(`Number is Zero`);
 }
-//- Take 5 different numbers and check which one is greatest and then check which one is smallest use separate conditionals  for both scenarios.
+//-Q6: Take 5 different numbers and check which one is greatest and then check which one is smallest use separate conditionals  for both scenarios.
 let num4 = 1;
 let num5 = 10;
 let num6 = 25;
