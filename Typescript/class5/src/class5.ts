@@ -49,7 +49,7 @@ if (accBal - withDrawl >= minBalReq) {
 
 // switch case approach
 
-switch ((accBal - withDrawl) >= minBalReq){
+switch ((accBal - withDrawl) >= minBalReq) {
     case true:
         console.log(`You can Withdraw Cash`)
         break
@@ -61,12 +61,12 @@ switch ((accBal - withDrawl) >= minBalReq){
 //Design a program that takes a month as input (1-12) and prints the number of days in that month. 
 let months: number = 3
 
-if (months >=1 && months <=12){
-    if (months === 2){
+if (months >= 1 && months <= 12) {
+    if (months === 2) {
         console.log(`The Month ${months} has 28 days`)
-    } else if (months === 4 || months === 6 || months === 9 || months === 11){
+    } else if (months === 4 || months === 6 || months === 9 || months === 11) {
         console.log(`The Month ${months} has 30 days`)
-    } else {console.log(`The Month ${months} has 31 days`)}
+    } else { console.log(`The Month ${months} has 31 days`) }
 
 } else {
     console.log(`Invalid Month! : Please enter number between 1 to 12`)
@@ -87,36 +87,36 @@ else {
 //switch condition
 
 let weekDay = 5
-switch (weekDay){
+switch (weekDay) {
     case 1:
         console.log(`${weekDay} : Day is Monday`)
         break
     case 2:
-        console.log(`${weekDay} : Day is tuesday`)  
-        break 
+        console.log(`${weekDay} : Day is tuesday`)
+        break
     case 3:
         console.log(`${weekDay} : Day is Wednesday`)
-        break 
+        break
     case 4:
-        console.log(`${weekDay} : Day is Thursday`) 
+        console.log(`${weekDay} : Day is Thursday`)
         break
     case 5:
         console.log(`${weekDay} : Day is Friday`)
-        break 
+        break
     case 6:
         console.log(`${weekDay} : Day is Saturday`)
         break
     case 7:
         console.log(`${weekDay} : Day is Sunday`)
         break
-default:
-        console.log(`${weekDay} is Invalid number.Write between 1 to 7`)                        
+    default:
+        console.log(`${weekDay} is Invalid number.Write between 1 to 7`)
 }
 
 //Basic calculator
 
-let operator =`/` 
-switch (operator){
+let operator = `/`
+switch (operator) {
     case `+`:
         console.log(num1 + num2)
         break
@@ -127,16 +127,16 @@ switch (operator){
         console.log(num3 * num1)
         break
     case `/`:
-        console.log(num2 / num1) 
-        break           
-default :
-console.log(`Invalid operator`)
+        console.log(num2 / num1)
+        break
+    default:
+        console.log(`Invalid operator`)
 }
 
 
 //vovel
 let alphabet = `a`
-switch (alphabet){
+switch (alphabet) {
     case `a`:
         console.log(`${alphabet} is a vovel`)
         break
@@ -152,8 +152,8 @@ switch (alphabet){
     case `u`:
         console.log(`${alphabet} is a vovel`)
         break
-default :
-console.log(`${alphabet} is not a vovel`)        
+    default:
+        console.log(`${alphabet} is not a vovel`)
 }
 
 /*
@@ -166,37 +166,37 @@ QTR:1 Week 5 assignment.
  - Take 5 different numbers and check which on is greatest and then check which one is smallest use separate conditionals  for both scenarios.
  */
 
- //-Q1: Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
+//-Q1: Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
 
- let day1 = 6
- if (day1 >=1 && day1 <=7){
- switch (day1) {
-    case 1 :
-        console.log(`The Day is Monday`)
-        break
-    case 2 :
-        console.log(`The Day is Tuesday`)
-        break
-    case 3 :
-        console.log(`The Day is Wednesday`)
-        break
-    case 4 :
-        console.log(`The Day is Thursday`)
-        break
-    case 5 :
-        console.log(`The Day is Friday`)
-        break
-    case 6 : 
-        console.log(`The Day is Weekend`)  
-        break
-default :
-        console.log(`Its Sunday`)                   
- }
+let day1 = 6
+if (day1 >= 1 && day1 <= 7) {
+    switch (day1) {
+        case 1:
+            console.log(`The Day is Monday`)
+            break
+        case 2:
+            console.log(`The Day is Tuesday`)
+            break
+        case 3:
+            console.log(`The Day is Wednesday`)
+            break
+        case 4:
+            console.log(`The Day is Thursday`)
+            break
+        case 5:
+            console.log(`The Day is Friday`)
+            break
+        case 6:
+            console.log(`The Day is Weekend`)
+            break
+        default:
+            console.log(`Its Sunday`)
+    }
 }
- else {
+else {
     console.log(`Invalid Day! : Please input from 1 to 7`)
- }
-    
+}
+
 //-Q2: Try making ATM Machine matches pin and account number it matches then user can withdraw amount. And if he or she hasn't sufficient balance show them a message .Show message for wrong account number and wrong pin separately. 
 
 
@@ -225,39 +225,37 @@ if (accountNum === 123456) {
 //-Q3: Write a ts program that prints message like "Good Morning" etc depending on time use hours only for now. Do it with both if else if and switch statement.
 let hour = 5
 //Using IF-ELSE-IF
-if (hour >=0 && hour <= 23)
+if (hour >= 0 && hour <= 23)
 
-if (hour >= 5 && hour < 12) {
-    console.log(`Good Morning`)
-} else if (hour >= 12 && hour < 17) 
-{
-    console.log(`Good Afternoon`)
-} else if (hour >= 17 && hour < 21)
- {
-    console.log(`Good Evening`)
-} else {
-    console.log(`Good Night`)
-}
+    if (hour >= 5 && hour < 12) {
+        console.log(`Good Morning`)
+    } else if (hour >= 12 && hour < 17) {
+        console.log(`Good Afternoon`)
+    } else if (hour >= 17 && hour < 21) {
+        console.log(`Good Evening`)
+    } else {
+        console.log(`Good Night`)
+    }
 else {
     console.log(`Invalid HRS! : Input HRS from 0 to 23`)
 }
 
 // Using SWITCH statement
-if (hour >=0 && hour <= 23)
-switch (true) {
-    case hour >= 5 && hour < 12:
-        console.log(`Good Morning`)
-        break
-    case hour >= 12 && hour < 17:
-        console.log(`Good Afternoon`)
-        break
-    case hour >= 17 && hour < 21:
-        console.log(`Good Evening`)
-        break
-    default:
-        console.log(`Good Night`)
-        break
-}else {
+if (hour >= 0 && hour <= 23)
+    switch (true) {
+        case hour >= 5 && hour < 12:
+            console.log(`Good Morning`)
+            break
+        case hour >= 12 && hour < 17:
+            console.log(`Good Afternoon`)
+            break
+        case hour >= 17 && hour < 21:
+            console.log(`Good Evening`)
+            break
+        default:
+            console.log(`Good Night`)
+            break
+    } else {
     console.log(`Invalid HRS! : Input HRS from 0 to 23`)
 }
 
@@ -265,56 +263,56 @@ switch (true) {
 //-Q4: Write a program that prints the name of study for a person for instance   middle , matric etc from playgroup to PhD on basis of class number. Do it with both if else if and switch statement .
 
 let class1 = 5
-let primery = class1 >=1 && class1 <=5
-let middle = class1 >=5 && class1 <=8
-let matric = class1 >= 9 && class1 <=10
-let interMediate = class1 >= 11 && class1 <=12
-let graduation = class1 >= 13 && class1 <=14
-let masters = class1 >=15 && class1 <=16
-let phd = class1 >=17 && class1 <=20
-if(class1 >=1 && class1 <= 20){
-    switch(true){
-        case primery : 
-        console.log(`You belongs to Primery section`)
-        break
-        case middle : 
-        console.log(`You belongs to Middle section`)
-        break
-        case matric : 
-        console.log(`You belongs to Matric section`)
-        break
-        case interMediate : 
-        console.log(`You belongs to InterMediate section`)
-        break
-        case graduation : 
-        console.log(`You belongs to Graduation section`)
-        break
-        case masters : 
-        console.log(`You belongs to Masters section`)
-        break
-        default :
-        console.log(`You belongs to Phd section`)        
+let primery = class1 >= 1 && class1 <= 5
+let middle = class1 >= 5 && class1 <= 8
+let matric = class1 >= 9 && class1 <= 10
+let interMediate = class1 >= 11 && class1 <= 12
+let graduation = class1 >= 13 && class1 <= 14
+let masters = class1 >= 15 && class1 <= 16
+let phd = class1 >= 17 && class1 <= 20
+if (class1 >= 1 && class1 <= 20) {
+    switch (true) {
+        case primery:
+            console.log(`You belongs to Primery section`)
+            break
+        case middle:
+            console.log(`You belongs to Middle section`)
+            break
+        case matric:
+            console.log(`You belongs to Matric section`)
+            break
+        case interMediate:
+            console.log(`You belongs to InterMediate section`)
+            break
+        case graduation:
+            console.log(`You belongs to Graduation section`)
+            break
+        case masters:
+            console.log(`You belongs to Masters section`)
+            break
+        default:
+            console.log(`You belongs to Phd section`)
     }
 } else {
     console.log(`Invalid class! : Enter from 1 to 20 `)
 }
 
 
-//-Q5: Write a TS program that check ms wheather if the number is positive, zero or negative.
+//-Q5: Write a TS program that check ms whether if the number is positive, zero or negative.
 
 let num9 = -1
-let positive = num9 >0
-let negative = num9 <0
-if (num9){
-    switch(true){
-        case positive :
+let positive = num9 > 0
+let negative = num9 < 0
+if (num9) {
+    switch (true) {
+        case positive:
             console.log(`Number is Positive`)
             break
-        case negative :
+        case negative:
             console.log(`Number is Negative`)
-            break  
+            break
     }
-}else {
+} else {
     console.log(`Number is Zero`)
 }
 
@@ -328,53 +326,53 @@ let num6 = 25
 let num7 = 5
 let num8 = 55
 
-let greatestNum4 = num4 > num5 && num4 > num6 && num4 > num7 && num4 > num8  
+let greatestNum4 = num4 > num5 && num4 > num6 && num4 > num7 && num4 > num8
 let greatestNum5 = num5 > num4 && num5 > num6 && num5 > num7 && num5 > num8
 let greatestNum6 = num6 > num4 && num6 > num5 && num6 > num7 && num6 > num8
 let greatestNum7 = num7 > num4 && num7 > num5 && num7 > num6 && num7 > num8
 let greatestNum8 = num8 > num4 && num8 > num5 && num8 > num6 && num8 > num7
-switch (true){
-    case greatestNum4 :
-        console.log(`Gretest Nummber is ${num4}`)
-    break
-    case greatestNum5 :
-        console.log(`Gretest Nummber is ${num6}`)
-    break
-    case greatestNum6 :
-        console.log(`Gretest Nummber is ${num6}`)
-    break
-    case greatestNum7 :
-        console.log(`Gretest Nummber is ${num7}`)
-    break
-    case greatestNum8 :
-        console.log(`Gretest Nummber is ${num8}`)
-    break
-default : {
-    console.log(`Please check! : 1 or more numbers could'nt be same!!`)
+switch (true) {
+    case greatestNum4:
+        console.log(`Greatest Number is ${num4}`)
+        break
+    case greatestNum5:
+        console.log(`Greatest Number is ${num6}`)
+        break
+    case greatestNum6:
+        console.log(`Greatest Number is ${num6}`)
+        break
+    case greatestNum7:
+        console.log(`Greatest Number is ${num7}`)
+        break
+    case greatestNum8:
+        console.log(`Greatest Number is ${num8}`)
+        break
+    default: {
+        console.log(`Please check! : 1 or more numbers could'nt be same!!`)
+    }
 }
-}
-let smallestNum4 = num4 < num5 && num4 < num6 && num4 < num7 && num4 < num8  
+let smallestNum4 = num4 < num5 && num4 < num6 && num4 < num7 && num4 < num8
 let smallestNum5 = num5 < num4 && num5 < num6 && num5 < num7 && num5 < num8
 let smallestNum6 = num6 < num4 && num6 < num5 && num6 < num7 && num6 < num8
 let smallestNum7 = num7 < num4 && num7 < num5 && num7 < num6 && num7 < num8
 let smallestNum8 = num8 < num4 && num8 < num5 && num8 < num6 && num8 < num7
-switch (true){
-    case smallestNum4 :
-        console.log(`Smallest Nummber is ${num4}`)
-    break
-    case smallestNum5 :
-        console.log(`Smallest Nummber is ${num6}`)
-    break
-    case smallestNum6 :
-        console.log(`Smallest Nummber is ${num6}`)
-    break
-    case smallestNum7 :
-        console.log(`Smallest Nummber is ${num7}`)
-    break
-    case smallestNum8 :
-        console.log(`Smallest Nummber is ${num8}`)
-    break
-default : {
-    console.log(`Please check! : 1 or more numbers could'nt be same!!`)
-}
+switch (true) {
+    case smallestNum4:
+        console.log(`Smallest Number is ${num4}`)
+        break
+    case smallestNum5:
+        console.log(`Smallest Number is ${num6}`)
+        break
+    case smallestNum6:
+        console.log(`Smallest Number is ${num6}`)
+        break
+    case smallestNum7:
+        console.log(`Smallest Number is ${num7}`)
+        break
+    case smallestNum8:
+        console.log(`Smallest Number is ${num8}`)
+        break
+    default: {
+        console.log(`Please check! : 1 or more numbers could'nt be same!!`)
+    }
 }

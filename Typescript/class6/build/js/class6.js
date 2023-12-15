@@ -1,5 +1,6 @@
 "use strict";
-/*Qtr-1 , 4th_week assignment
+/*
+Qtr-1 , 4th_week assignment
 Assignment for this week is:
 - Write a program that calculates the percentage.
 - Write a program that calculates the discount for a product based on its price. If the price is above $100, apply a 10% discount; otherwise, apply a 5% discount.
@@ -16,8 +17,7 @@ Assignment for this week is:
  * 60% or greater, grade C
  * 50% or greater, grade D
  * Less than 50% , grade F.
-
-*/
+ * */
 //- Write a program that calculates the percentage. 
 //Simple method
 let marksObt = 756;
@@ -315,7 +315,7 @@ const leap_Year = (_year) => {
 };
 leap_Year(1904);
 //Develop a program that determines the day of the week. Ask the user for a number (1-7) and use nested if statements to print the corresponding day's name.
-//somple method
+//simple method
 let day = 4;
 if (day >= 1 || day <= 7) {
     if (day === 1) {
@@ -340,7 +340,7 @@ if (day >= 1 || day <= 7) {
         console.log(`The Last Day of the Week is Saturday`);
     }
     else {
-        console.log(`"Invalid Numder is selected" Please select number between 1 to 7`);
+        console.log(`"Invalid Number is selected" Please select number between 1 to 7`);
     }
 }
 //function/switch case method
@@ -370,7 +370,7 @@ function weekDay(_day) {
                 break;
         }
     else {
-        console.log(`"Invalid Numder is selected" Please select number between 1 to 7`);
+        console.log(`"Invalid Number is selected" Please select number between 1 to 7`);
     }
     return;
 }
@@ -402,7 +402,7 @@ let week_Day = (_day) => {
                 break;
         }
     else {
-        console.log(`"Invalid Numder is selected" Please select number between 1 to 7`);
+        console.log(`"Invalid Number is selected" Please select number between 1 to 7`);
     }
     return;
 };
@@ -490,3 +490,356 @@ let calculateBill = (_unit) => {
 };
 let result = calculateBill(456);
 console.log(result);
+//Write a program that tells if the student is pass or fail based on the attendance greater than 75%, practical marks should greater than 50% and theory marks should be greater than 45%  for passing in a semester.
+//Simple method
+let attendance = 76;
+let practical = 51;
+let theory = 46;
+if (attendance > 75 && practical > 50 && theory > 45) {
+    console.log(`Student is Pass as Attendance : ${attendance}, Practical Marks : ${practical} & Theory Marks : ${theory}`);
+}
+else {
+    console.log(`Student is fail as Attendance : ${attendance}, Practical Marks : ${practical} & Theory Marks : ${theory}`);
+}
+//Function method
+function _result(_attendence, _practical, _theory) {
+    if (_attendence > 75 && _practical > 50 && _theory > 45) {
+        console.log(`Student is Pass as Attendance : ${_attendence}%, Practical Marks : ${_practical}% & Theory Marks : ${_theory}%`);
+    }
+    else {
+        console.log(`Student is fail as Attendance : ${_attendence}%, Practical Marks : ${_practical}% & Theory Marks : ${_theory}%`);
+    }
+}
+_result(76, 95, 10);
+//Arrow/Switch Case Function
+let _grade = (_attendence, _practical, _theory) => {
+    switch (true) {
+        case (_attendence > 75 && _practical > 50 && _theory > 45):
+            console.log(`Student is Pass as Attendance : ${_attendence}%, Practical Marks : ${_practical}% & Theory Marks : ${_theory}%`);
+        default:
+            console.log(`Student is fail as Attendance : ${attendance}%, Practical Marks : ${_practical}% & Theory Marks : ${_theory}%`);
+    }
+};
+_grade(25, 95, 35);
+/*- Write a ts program that evaluates the grades of the students:
+* 80% or greater, grade A
+* 70% or greater, grade B
+* 60% or greater, grade C
+* 50% or greater, grade D
+* Less than 50% , grade F.
+*/
+//Simple method
+let results = 80;
+if (results >= 80) {
+    console.log(`Student Granted Grade "A", as he secured ${results}% Marks`);
+}
+else if (results >= 70 && results < 80) {
+    console.log(`Student Granted Grade "B", as he secured ${results}% Marks`);
+}
+else if (results >= 60 && results < 70) {
+    console.log(`Student Granted Grade "C", as he secured ${results}% Marks`);
+}
+else if (results >= 50 && results < 60) {
+    console.log(`Student Granted Grade "D", as he secured ${results}% Marks`);
+}
+else {
+    console.log(`Student Granted Grade "F", as he secured ${results}% Marks`);
+}
+//Function method
+function grade(_result) {
+    if (_result >= 80) {
+        console.log(`Student Granted Grade "A", as he secured ${_result}% Marks`);
+    }
+    else if (_result >= 70 && _result < 80) {
+        console.log(`Student Granted Grade "B", as he secured ${_result}% Marks`);
+    }
+    else if (_result >= 60 && _result < 70) {
+        console.log(`Student Granted Grade "C", as he secured ${_result}% Marks`);
+    }
+    else if (_result >= 50 && _result < 60) {
+        console.log(`Student Granted Grade "D", as he secured ${_result}% Marks`);
+    }
+    else {
+        console.log(`Student Granted Grade "F", as he secured ${_result}% Marks`);
+    }
+}
+grade(10);
+//Arrow / Switch Case
+let $grade = (_result_) => {
+    switch (true) {
+        case (_result_ >= 80):
+            return `A`;
+        case (_result_ >= 70 && _result_ < 80):
+            return `B`;
+        case (_result_ >= 60 && _result_ < 70):
+            return `C`;
+        case (_result_ >= 50 && _result_ < 60):
+            return `D`;
+        default:
+            return `F`;
+    }
+};
+const _result_ = 68;
+const grade_ = $grade(_result_);
+console.log(`Marks ${_result_} corresponds to Grade ${grade_}`);
+/*
+QTR:1 Week 5 assignment.
+- Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
+- Try making ATM Machine matches pin and account number it it matches then user can withdraw amount. And if he or she hasn't sufficient balance show them a message .Show message for wrong account number and wrong pin separately.
+- Write a ts program that prints message like "Good Morning" etc depending on time use hours only for now. Do it with both if else if abd switch statement.
+- Write a program that prints the name of study for a person for instance   middle , matric etc from playgroup to PhD on basis of class number. Do it with both if else if and switch statement .
+- Write a TS program that check whether if the number is positive, zero or negative.
+- Take 5 different numbers and check which on is greatest and then check which one is smallest use separate conditionals  for both scenarios.
+*/
+//-Q1: Develop a program that determines the day of the week. From number 1 to 6 for 1 to 5 it should print day name Monday to Friday respectively and for 6 it should print weekend. Do it using switch statement.
+// Function / switch method
+let day1 = 6;
+function day_(day1) {
+    switch (day1) {
+        case 1:
+            return `Monday`;
+        case 2:
+            return `Tuesday`;
+        case 3:
+            return `Wednesday`;
+        case 4:
+            return `Thursday`;
+        case 5:
+            return `Friday`;
+        case 6:
+            return `Saturday`;
+        default:
+            return `Sunday`;
+    }
+}
+if (day1 >= 1 && day1 <= 7) {
+    console.log(`Day ${day1} is ${day_(day1)}`);
+}
+else {
+    console.log(`Invalid Day`);
+}
+//)
+//Arrow method
+let day2 = 3;
+let day_2 = (day2) => {
+    switch (day2) {
+        case 1:
+            return `Monday`;
+        case 2:
+            return `Tuesday`;
+        case 3:
+            return `Wednesday`;
+        case 4:
+            return `Thursday`;
+        case 5:
+            return `Friday`;
+        case 6:
+            return `Saturday`;
+        default:
+            return `Weekend`;
+    }
+};
+if (day2 >= 1 && day2 <= 7) {
+    console.log(`Day ${day2} is ${day_2(day2)}`);
+}
+else {
+    console.log(`Invalid Day`);
+}
+//- Try making ATM Machine matches pin and account number it matches then user can withdraw amount. And if he or she hasn't sufficient balance show them a message .Show message for wrong account number and wrong pin separately.
+//Function method
+let account_number = 123456789;
+let pin = 1234;
+let withdraw = 1000;
+let balance = 5000;
+function atm(account_number, pin, withdraw, balance) {
+    if (account_number == 123456789) {
+        if (pin === 1234) {
+            if (withdraw <= balance) {
+                return `Withdraw Successful`;
+            }
+            else {
+                return `Insufficient Balance`;
+            }
+        }
+        else {
+            return `Wrong Pin`;
+        }
+    }
+    else {
+        return `Wrong Account Number`;
+    }
+}
+console.log(`${atm(account_number, pin, withdraw, balance)}`);
+//Arrow method
+let acNo = 123456;
+let pin_ = 123;
+let withdraw_ = 1000;
+let balance_ = 5000;
+let _atm = (acNo, pin_, withdraw_, balance_) => {
+    if (acNo === 123456) {
+        if (pin_ === 123) {
+            if (withdraw_ <= balance_) {
+                return `Withdraw Successful`;
+            }
+            else {
+                return `Insufficient Balance`;
+            }
+        }
+        else {
+            return `Wrong Pin`;
+        }
+    }
+    else {
+        return `Wrong Account Number`;
+    }
+};
+console.log(`${_atm(acNo, pin_, withdraw_, balance_)}`);
+//- Write a ts program that prints message like "Good Morning" etc depending on time use hours only for now. Do it with both if else if abd switch statement.
+//Arrow method
+let time = 12;
+let message = (time) => {
+    switch (true) {
+        case (time >= 5 && time < 12):
+            return `Good Morning`;
+        case (time >= 12 && time < 16):
+            return `Good Afternoon`;
+        case (time >= 16 && time < 20):
+            return `Good Evening`;
+        case (time >= 20 && time < 24):
+            return `Good Night`;
+        case (time >= 0 && time < 5):
+            return `Good Night`;
+        default:
+            return `Invalid Time`;
+    }
+};
+console.log(message(time));
+//Function / if else method
+let time1 = 19;
+function message1(time1) {
+    if (time1 >= 5 && time1 < 12) {
+        return `Good Morning`;
+    }
+    else if (time1 >= 12 && time1 < 16) {
+        return `Good Afternoon`;
+    }
+    else if (time1 >= 16 && time1 < 20) {
+        return `Good Evening`;
+    }
+    else if (time1 >= 20 && time1 < 24) {
+        return `Good Night`;
+    }
+    else if (time1 >= 0 && time1 < 5) {
+        return `Good Night`;
+    }
+    else {
+        return `Invalid Time`;
+    }
+}
+console.log(message1(time1));
+//- Write a program that prints the name of study for a person for instance   middle , matric etc from playgroup to PhD on basis of class number. Do it with both if else if and switch statement 
+let study = (class_) => {
+    switch (true) {
+        case class_ > 0 && class_ < 1:
+            return `Playgroup`;
+        case class_ >= 2 && class_ <= 5:
+            return `Primary`;
+        case class_ >= 6 && class_ <= 8:
+            return `Middle`;
+        case class_ >= 9 && class_ <= 10:
+            return `Secondary School`;
+        case class_ >= 11 && class_ <= 12:
+            return `Higher Secondary School`;
+        case class_ >= 13 && class_ <= 14:
+            return `Graduation`;
+        case class_ >= 15 && class_ <= 16:
+            return `Master`;
+        case class_ >= 17 && class_ <= 18:
+            return `M.Phil`;
+        case class_ >= 19 && class_ <= 20:
+            return `PhD`;
+        default:
+            return `Invalid Class`;
+    }
+};
+let class_ = 17;
+console.log(`You are in ${study(class_)} class`);
+//- Write a TS program that check whether if the number is positive, zero or negative.
+//Function / if else
+let number1 = 5;
+function _number(number1) {
+    if (number1 > 0) {
+        return `Positive`;
+    }
+    else if (number1 < 0) {
+        return `Negative`;
+    }
+    else {
+        return `Zero`;
+    }
+}
+console.log(`${number1} is ${_number(number1)}`);
+//Arrow / switch case method
+let num1 = -9;
+let _num = (num1) => {
+    switch (true) {
+        case num1 > 0:
+            return ` Positive`;
+        case num1 < 0:
+            return `Negative`;
+        default:
+            return `Zero`;
+    }
+};
+console.log(`${num1} is ${_num(num1)}`);
+//- Take 5 different numbers and check which on is greatest and then check which one is smallest use separate conditionals  for both scenarios.
+let num2 = 1;
+let num3 = 11;
+let num4 = 12;
+let num5 = 19;
+let num6 = 14;
+let max = (num2, num3, num4, num5, num6) => {
+    return Math.max(num2, num3, num4, num5, num6);
+};
+console.log(`${Math.max(num2, num3, num4, num5, num6)} is the largest number`);
+let min = (num2, num3, num4, num5, num6) => {
+    return Math.min(num2, num3, num4, num5, num6);
+};
+console.log(`${Math.min(num2, num3, num4, num5, num6)} is the smallest number`);
+//Function method
+function max_(num2, num3, num4, num5, num6) {
+    if (num2 > num3 && num2 > num4 && num2 > num5 && num2 > num6) {
+        return `${num2} is the largest number`;
+    }
+    else if (num3 > num2 && num3 > num4 && num3 > num5 && num3 > num6) {
+        return `${num3} is the largest number`;
+    }
+    else if (num4 > num2 && num4 > num3 && num4 > num5 && num4 > num6) {
+        return `${num4} is the largest number`;
+    }
+    else if (num5 > num2 && num5 > num3 && num5 > num4 && num5 > num6) {
+        return `${num5} is the largest number`;
+    }
+    else {
+        return `${num6} is the largest number`;
+    }
+}
+console.log(max_(num2, num3, num4, num5, num6));
+function min_(num2, num3, num4, num5, num6) {
+    if (num2 < num3 && num2 < num4 && num2 < num5 && num2 < num6) {
+        return `${num2} is the Smallest number`;
+    }
+    else if (num3 < num2 && num3 < num4 && num3 < num5 && num3 < num6) {
+        return `${num3} is the Smallest number`;
+    }
+    else if (num4 < num2 && num4 < num3 && num4 < num5 && num4 < num6) {
+        return `${num4} is the Smallest number`;
+    }
+    else if (num5 < num2 && num5 < num3 && num5 < num4 && num5 < num6) {
+        return `${num5} is the Smallest number`;
+    }
+    else {
+        return `${num6} is the Smallest number`;
+    }
+}
+console.log(min_(num2, num3, num4, num5, num6));
